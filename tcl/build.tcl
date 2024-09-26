@@ -51,8 +51,8 @@ proc garnet_create_synth_project {args} {
   global disable_ddrb
   global disable_debug_bridge
 
-  create_project -in_memory -part xcvu9p-flga2104-2L-e {*}$args
-  set_property board_part xilinx.com:vcu118:part0:2.4 [current_project]
+  create_project -in_memory -part xcvu37p-fsvh2892-2L-e {*}$args
+  set_property board_part xilinx.com:vcu128:part0:1.0 [current_project]
 
   set config_fd [open garnet_config.vh w]
   puts $config_fd "`ifndef GARNET_CONFIG_SVH"
@@ -116,8 +116,8 @@ proc garnet_synth_design {args} {
 proc garnet_create_impl_project {args} {
   global garnet_dir
 
-  create_project -in_memory -part xcvu9p-flga2104-2L-e {*}$args
-  set_property board_part xilinx.com:vcu118:part0:2.4 [current_project]
+  create_project -in_memory -part xcvu37p-fsvh2892-2L-e {*}$args
+  set_property board_part xilinx.com:vcu128:part0:1.0 [current_project]
 
   source "$garnet_dir/tcl/waivers_ip.tcl"
   source "$garnet_dir/tcl/waivers_shell.tcl"

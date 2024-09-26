@@ -24,8 +24,8 @@ set garnet_shell_dir ".."
 set garnet_dir "$garnet_shell_dir/.."
 set project_name "project"
 
-create_project -force empty -part xcvu9p-flga2104-2L-e
-set_property board_part xilinx.com:vcu118:part0:2.4 [current_project]
+create_project -force empty -part xcvu37p-fsvh2892-2L-e
+set_property board_part xilinx.com:vcu128:part0:1.0 [current_project]
 
 source "$garnet_dir/tcl/waivers_ip.tcl"
 source "$garnet_dir/tcl/waivers_shell.tcl"
